@@ -1,15 +1,15 @@
 package nl.ceesgribnau.javaAdvanced.model;
 
-public class review {
+public class Review {
     private long id;
     private String title;
     private String description;
     private int rating;
 
-    public review() {
+    public Review() {
     }
 
-    public review(long id, String title, String description, int rating) {
+    public Review(long id, String title, String description, int rating) {
         this.id = id;
         this.title = title;
         this.description = description;
