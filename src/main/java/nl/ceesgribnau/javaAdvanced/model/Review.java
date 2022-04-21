@@ -1,7 +1,7 @@
 package nl.ceesgribnau.javaAdvanced.model;
 
 public class Review {
-    private long id;
+    private int id;
     private String title;
     private String description;
     private int rating;
@@ -9,18 +9,28 @@ public class Review {
     public Review() {
     }
 
-    public Review(long id, String title, String description, int rating) {
+    @Override
+    public String toString() {
+        return "Review{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", rating=" + rating +
+                '}';
+    }
+
+    public Review(int id, String title, String description, int rating) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.rating = rating;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
